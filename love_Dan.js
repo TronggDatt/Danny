@@ -44,7 +44,7 @@ yesButton.onclick = function () {
 
     document.write("<br/>");
 
-    document.write("<span >DM me on Instagram: <a href='https://www.instagram.com/dev_dan_tronggdatt/'>My IG</a></span>");
+    document.write("<span >DM me on Instagram: <a href='https://www.instagram.com/dev_dan_tronggdatt/'>Click here</a></span>");
 
     document.write("<p style=' text-align: center; position: fixed; bottom: 0; width: 100%;'>This product is developed by Dan 🦊</p>")
 };
