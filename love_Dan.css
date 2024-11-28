@@ -60,12 +60,3 @@ button {
     color: #ff1493;
     margin-top: 20px;
 }
-#heart {
-    margin-top: 20px;
-    font-family: monospace;
-    white-space: pre;
-    text-align: center;
-    font-size: 30px;
-    color: red;
-    display: none;
-}
