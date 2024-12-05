@@ -47,6 +47,14 @@ yesButton.onclick = function () {
     document.write("<span >DM me on Instagram: <a href='https://www.instagram.com/dev_dan_tronggdatt/'>Click Me</a></span>");
 
     document.write("<p style=' text-align: center; position: fixed; bottom: 0; width: 100%;'>This product is developed by Dan 🦊</p>")
+
+    function createMultipleCircle() {
+        for (let i = 0; i < 30; i++) {
+            createCircle();
+        }
+    }
+
+    createMultipleCircle();
 };
 
 noButton.onmouseover = function () {
@@ -59,3 +67,39 @@ noButton.onmouseover = function () {
     noButton.style.left = `${randomLeft}px`;
     noButton.style.top = `${randomTop}px`;
 };
+
+function Circle(x, y, radius) {
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
+}
+
+//
+// function getRandomHex() {
+//     return Math.floor(Math.random() * 255);
+// }
+
+function getRandomColor() {
+    return "rgba(255,105,180,0.65)";
+}
+
+function createCircle() {
+    let ctx = document.getElementById('myCanvas').getContext('2d');
+    let radius = Math.floor(Math.random() * 80);
+    let color = getRandomColor();
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+    let circle = new Circle(x, y, radius);
+    ctx.beginPath();
+    ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+    ctx.fillStyle = color;
+    ctx.fill();
+}
+
+function createMultipleCircle() {
+    for (let i = 0; i < 50; i++) {
+        createCircle();
+    }
+}
+
+createMultipleCircle();
