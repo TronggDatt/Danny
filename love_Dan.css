@@ -72,3 +72,33 @@ button {
     color: #ff1493;
     margin-top: 20px;
 }
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    /*#myCanvas {*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
+    /*}*/
+
+    button {
+        position: relative;
+        margin: 10px auto;
+        transform: none;
+    }
+
+    #yes {
+        top: auto;
+        left: auto;
+    }
+
+    #no {
+        top: auto;
+        left: auto;
+    }
+
+    #container {
+        padding: 20px;
+    }
+}
